@@ -15,9 +15,12 @@ import { ProductsPageComponent } from './pages/store/products-page/products-page
 import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
 import { FramePageComponent } from './pages/master/frame.page';
 import { ProductCardComponent } from './components/store/product-card/product-card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { MaskDirective } from './directives/mask.directive';
 
 @NgModule({
   declarations: [
+    MaskDirective,
     AppComponent,
     NavBarComponent,
     LoginPageComponent,
@@ -27,7 +30,8 @@ import { ProductCardComponent } from './components/store/product-card/product-ca
     ProductsPageComponent,
     CartPageComponent,
     FramePageComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    LoadingComponent,    
   ],
   imports: [
     BrowserModule,

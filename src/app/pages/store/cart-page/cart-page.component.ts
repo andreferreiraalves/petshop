@@ -15,6 +15,14 @@ export class CartPageComponent implements OnInit {
     this.loadCart();
   }
 
+  total() {
+    let total = 0;
+    this.cart.items.forEach((item) => {
+      total += (item.price * item.quantity);
+    });
+    return total;
+  }
+
   loadCart() {
     this.cart = CartUtil.get();
   }
